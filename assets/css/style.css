@@ -1,0 +1,104 @@
+:root {
+  --bg: #0b0c10;
+  --card: #11131a;
+  --text: #e9ecf1;
+  --muted: #a7b0c0;
+  --border: #222636;
+  --link: #cfe1ff;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid var(--border);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.brand-title {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.brand-sub { color: var(--muted); font-size: 13px; }
+
+.nav { margin-top: 18px; display: grid; gap: 8px; }
+.navlink {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02);
+}
+.navlink.active {
+  border-color: rgba(207,225,255,0.55);
+  background: rgba(207,225,255,0.06);
+}
+
+.footer { margin-top: 18px; color: var(--muted); font-size: 12px; }
+
+.content { padding: 28px; }
+.card {
+  max-width: 960px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.page-title { margin: 0 0 12px 0; font-size: 26px; }
+.muted { color: var(--muted); }
+
+.mobile-nav { display: none; margin-bottom: 12px; }
+.mobile-nav select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
+  align-items: start;
+  margin: 14px 0 18px 0;
+}
+.profile img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
+.profile .headline { font-size: 18px; font-weight: 700; margin: 0 0 6px 0; }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: 18px 0; }
+
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .mobile-nav { display: block; }
+}

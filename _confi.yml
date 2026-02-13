@@ -1,0 +1,9 @@
+title: Markus Gruber
+description: Personal homepage
+url: "https://SukramReburg.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Keep it simple; GitHub Pages supports Jekyll out of the box.

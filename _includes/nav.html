@@ -1,0 +1,6 @@
+<nav class="nav">
+  <a class="navlink {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Overview</a>
+  <a class="navlink {% if page.url contains 'masterthesis' %}active{% endif %}" href="{{ '/masterthesis' | relative_url }}">Masterthesis</a>
+  <a class="navlink {% if page.url contains 'wutis1' %}active{% endif %}" href="{{ '/wutis1' | relative_url }}">WUTIS Project I</a>
+  <a class="navlink {% if page.url contains 'wutis2' %}active{% endif %}" href="{{ '/wutis2' | relative_url }}">WUTIS Project II</a>
+</nav>

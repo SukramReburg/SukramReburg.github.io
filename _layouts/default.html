@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} · {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <aside class="sidebar">
+        <div class="brand">
+          <a class="brand-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <div class="brand-sub">TU Wien · Statistics · Credit Risk</div>
+        </div>
+
+        {% include nav.html %}
+
+        <div class="footer">
+          <div class="muted">© {{ "now" | date: "%Y" }} {{ site.title }}</div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="mobile-nav">
+          <label for="pagejump" class="muted">Navigate</label>
+          <select id="pagejump" onchange="if(this.value) window.location.href=this.value;">
+            <option value="{{ '/' | relative_url }}">Overview</option>
+            <option value="{{ '/masterthesis' | relative_url }}">Masterthesis</option>
+            <option value="{{ '/wutis1' | relative_url }}">WUTIS Project I</option>
+            <option value="{{ '/wutis2' | relative_url }}">WUTIS Project II</option>
+          </select>
+        </div>
+
+        <article class="card">
+          <h1 class="page-title">{{ page.title }}</h1>
+          <div class="page-body">
+            {{ content }}
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
