@@ -159,6 +159,44 @@ ul { padding-left: 40px; }
   font-size: 18px;
   line-height: 1.7;
   margin-bottom: 20px;
+  max-width: 58ch;
+}
+
+.right {
+  padding-right: 12px;
+}
+
+.masterthesis-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.9fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.masterthesis-visual {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.masterthesis-visual h4 {
+  margin: 0 0 10px 0;
+}
+
+.masterthesis-links {
+  margin: 12px 0 0 0;
+  padding-left: 18px;
+}
+
+.masterthesis-links li {
+  margin-bottom: 8px;
+}
+
+.masterthesis-structure-preview {
+  width: 100%;
+  min-height: 420px;
+  border: 0;
 }
 
 /* Responsive */
@@ -169,6 +207,10 @@ ul { padding-left: 40px; }
 
   .left h1 {
     font-size: 15px;
+  }
+
+  .masterthesis-layout {
+    grid-template-columns: 1fr;
   }
 }
 
