@@ -6,6 +6,7 @@
     <title>{{ page.title }} · {{ site.title }}</title>
     <meta name="description" content="{{ site.description }}" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" />
   </head>
 
   <body>
@@ -27,10 +28,10 @@
         <div class="mobile-nav">
           <label for="pagejump" class="muted">Navigate</label>
           <select id="pagejump" onchange="if(this.value) window.location.href=this.value;">
-            <option value="{{ '/' | relative_url }}">Overview</option>
-            <option value="{{ '/masterthesis' | relative_url }}">Masterthesis</option>
-            <option value="{{ '/wutis1' | relative_url }}">WUTIS Project I</option>
-            <option value="{{ '/wutis2' | relative_url }}">WUTIS Project II</option>
+            <option value="{{ '/' | relative_url }}" {% if page.url == '/' %}selected{% endif %}>Overview</option>
+            <option value="{{ '/masterthesis' | relative_url }}" {% if page.url contains 'masterthesis' %}selected{% endif %}>Masterthesis</option>
+            <option value="{{ '/wutis1' | relative_url }}" {% if page.url contains 'wutis1' %}selected{% endif %}>WUTIS Project I</option>
+            <option value="{{ '/wutis2' | relative_url }}" {% if page.url contains 'wutis2' %}selected{% endif %}>WUTIS Project II</option>
           </select>
         </div>
 

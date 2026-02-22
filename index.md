@@ -4,28 +4,28 @@ title: Overview
 ---
 
 <div class="profile">
-  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Profile photo">
+  <img src="{{ '/assets/image/profile.jpg' | relative_url }}" alt="Profile photo">
   <div>
     <p class="headline">Markus Gruber</p>
     <p class="muted">
       MSc Statistics & Mathematics in Economics (TU Wien). Focus: credit risk modelling, random forests, applied ML.
     </p>
     <p>
-      <a href="mailto:YOUR.EMAIL@DOMAIN">YOUR.EMAIL@DOMAIN</a> ·
+      <a href="mailto:markus.gruber@tuval.at">markus.gruber@tuval.at</a> ·
       <a href="https://github.com/SukramReburg">GitHub</a> ·
-      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/markus-gruber-0a49a575/">LinkedIn</a>
     </p>
   </div>
 </div>
 
 <hr/>
 
-### What I do
-- Credit risk modelling (IFRS 9 / PD-style thinking)
-- Machine learning for tabular data (Random Forest improvements, feature engineering, evaluation)
-- Reproducible work (R / Python, data pipelines)
+### Who I am
+I pursued a masters degree in Statistics and Mathematics in Economics at TU Wien, with a particular emphasis on quantitative methods and data-driven decision-making. My personal interests lie at the intersection of predictive modeling and cutting-edge statistical approaches, particularly when theory collides with the real world. 
+In my master’s thesis, I explored the pracitcal boundaries of the random forest model, developing new methodological approaches and applying concepts from other areas to enhance it. 
+In my current position as Quantitative Analyst, I concentrate on credit risk management, applying statistical techniques to — and sometimes beyond — regulatory limitations in a meaningful way.
 
+As part of WUTIS Algorithmic Trading Division, I investigate algorithmic trading concepts, develop and test systematic trading approaches, and implement them fully, from data processing to execution logic, in R and Python. Driven by innovation and the constant motivation to learn and improve I am more concerned with whether something actually works rather than how well it sounds.
 ### Highlights
-- **Master thesis:** Improving Random Forest models for predicting Credit Risk
-- **WUTIS Project I:** (add 2–3 bullet points)
-- **WUTIS Project II:** (add 2–3 bullet points)
+- **[Masterthesis:]({{ '/masterthesis' | relative_url }})** Improving Random Forest models for predicting Credit Risk
+- **[Collection of WUTIS Projects]({{ '/wutis1' | relative_url }}):** 

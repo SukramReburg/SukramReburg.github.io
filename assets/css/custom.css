@@ -97,8 +97,93 @@ a:hover { text-decoration: underline; }
 
 hr { border: 0; border-top: 1px solid var(--border); margin: 18px 0; }
 
-@media (max-width: 900px) {
+ul { padding-left: 40px; }
+.card p {
+  margin: 1em 0;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+}
+.site-header {
+  text-align: center;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 5px;
+  align-items: center;
+}
+
+.left h1 {
+  margin: 0;
+}@media (max-width: 900px) {
   .wrap { grid-template-columns: 1fr; }
   .sidebar { display: none; }
   .mobile-nav { display: block; }
+}
+
+.research-section {
+  padding: 80px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tagline {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.left h1 {
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 0;
+  font-weight: 600;
+}
+
+.right p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left h1 {
+    font-size: 15px;
+  }
+}
+
+.left {
+  border-left: 4px solid #ccc;
+  padding-left: 20px;
+}
+
+.page-logo-header{
+  width: 15%;
+  margin: 0 0 1px 0;
+}
+
+.page-logo{
+  display: block;
+  height: 1px;   /* <-- change this */
+  width: auto;
 }
