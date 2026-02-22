@@ -26,7 +26,7 @@ Our mission is to accelerate the development of hard- and soft-skills of our mem
     <div class="content-grid">
 
       <div class="left">
-        <h1>
+        <h1 class="wutis-lines">
           Research.<br>
           Backtest.<br>
           Implement.
