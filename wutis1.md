@@ -1,54 +1,42 @@
 ---
 layout: default
-title:
+title: WUTIS Algorithmic Trading
+description: Overview of Markus Gruber's work in the WUTIS algorithmic trading division.
 ---
-<header class="site-header">
-      <div class="header-inner">
-        <img src="{{ '/assets/image/cropped-WUTIS-Logo_NEW.png' | relative_url }}" alt="Logo" class="logo">
-      </div>
-</header>
 
-## Who is WUTIS
-We are Austria’s leading student-run finance society whose members have truly made the leap into finance, helped shape our brand and built an invaluable networking platform.
+<section class="detail-grid">
+  <aside class="detail-side">
+    <div class="detail-panel detail-panel--brand">
+      <img src="{{ '/assets/image/cropped-WUTIS-Logo_NEW.png' | relative_url }}" alt="WUTIS logo" class="detail-logo">
+      <p>Austria's student-run finance society with a strong focus on practical market work, research culture, and technical execution.</p>
+      <a href="https://wutis.at/">Visit WUTIS</a>
+    </div>
+  </aside>
 
-Our mission is to accelerate the development of hard- and soft-skills of our members, combining theory with a hands-on approach and real-life work experience.
-
-[**Homepage**](https://wutis.at/)
-
-## What does the Algorithmic Trading Division do
-<section class="research-section">
-  <div class="container">
-
-    <div class="tagline">
-      The Future Of Finance.
+  <div class="detail-main">
+    <div class="detail-intro">
+      <div class="eyebrow">Systematic Trading · Research</div>
+      <p>
+        Within WUTIS' algorithmic trading division, the work centers on translating market ideas into explicit rules, testable research setups,
+        and implementation paths that connect data handling, signal logic, and portfolio decisions.
+      </p>
     </div>
 
-    <div class="content-grid">
+    <section class="detail-section">
+      <h2>What the Division Does</h2>
+      <p>
+        The division approaches markets in a quantitative, rule-based framework. Members research hypotheses, formalize them as strategies,
+        and evaluate them through backtests and implementation workflows rather than relying on discretionary narratives.
+      </p>
+    </section>
 
-      <div class="left">
-        <h1 class="wutis-lines">
-          Research.<br>
-          Backtest.<br>
-          Implement.
-        </h1>
-      </div>
-
-      <div class="right">
-        <p>
-          The algorithmic trading division approaches financial markets in a rule based,
-          quantitative environment making use of statistics and various machine learning concepts.
-          The team codifies heuristics from asset selection, to position sizes and other investment criteria.
-        </p>
-
-        <p>
-          After making it through our assessment center, members contribute along the whole value chain
-          of algorithmic trading starting from idea generation to the final implementation of algorithms,
-          by performing research, designing prototypes, implementing analytics and trading algorithms
-          in order to manage alpha and risk inventory.
-        </p>
-      </div>
-
-    </div>
-
+    <section class="detail-section">
+      <h2>Contribution Areas</h2>
+      <ul class="detail-list">
+        <li>Researching tradable ideas and defining structured evaluation criteria.</li>
+        <li>Designing prototypes that connect signal generation, position logic, and portfolio-level controls.</li>
+        <li>Implementing analytics and trading workflows in R and Python across the full research-to-execution chain.</li>
+      </ul>
+    </section>
   </div>
 </section>
