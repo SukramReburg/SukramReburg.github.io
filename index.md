@@ -11,8 +11,9 @@ description: Quantitative research, machine learning, and finance-oriented proje
       <div class="eyebrow reveal reveal-delay-1">Quantitative Methods · Machine Learning · Finance</div>
       <h1 class="hero__title reveal reveal-delay-2">Building quantitative models, research-driven tools, and machine learning systems for high-stakes decisions.</h1>
       <p class="hero__lede reveal reveal-delay-3">
-        Markus Gruber is an MSc candidate in Statistics and Mathematics in Economics at TU Wien, working across predictive modeling,
-        risk-oriented analytics, and systematic research in R and Python. The focus is disciplined implementation: methods that hold up in practice.
+        This webpage, opposite to my other projects is severly vibe coded. It serves two purposes.
+        Giving you, the reader an overview of my projects and giving me, the creater of this page an idea
+        how far AI can bring me in a task (webpagedevelopment and graphic design) I have absolutely zero knowledge about.
       </p>
       <div class="hero__actions reveal reveal-delay-4">
         <a class="button button--primary" href="#work">View Projects</a>
